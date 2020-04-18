@@ -1,4 +1,4 @@
-# Sentiment-analysis-on-Text
+# Sentiment Analysis On Text
 
 IMDB-Internet Movie Database is owned by Amazon
  It contains lot of Data regarding the movies and their Review's data we use here is 
