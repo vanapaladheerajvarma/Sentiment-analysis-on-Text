@@ -1,8 +1,10 @@
 # Sentiment Analysis On Text
 
+![Python 3.6](https://img.shields.io/badge/Python-3.6-brightgreen.svg) ![Numpy](https://img.shields.io/badge/Library-Numpy-red.svg) ![Pandas](https://img.shields.io/badge/Library-Pandas-yellow.svg)  ![Keras](https://img.shields.io/badge/Library-Keras-pink.svg) 
+
 IMDB-Internet Movie Database is owned by Amazon
 
- It contains lot of Data regarding the movies and their Review's data we use here is 
+ It contains lot of Data regarding the movies and their Review's data we use here 
  
  ## Understanding Requirement
  
@@ -18,7 +20,7 @@ IMDB-Internet Movie Database is owned by Amazon
     
  ## Data Agoisition && Data Preparation
  
- Fortunately kears provides us this dataset so it performs necessary Data cleaning,pre processing
+ Fortunately kears provides us this dataset so it performs necessary Data cleaning and Pre processing also
  
  so now construct a Table which consists of word and frequency from the dataset Corpus(collection of all Documents or Reviews)
  
@@ -44,13 +46,13 @@ IMDB-Internet Movie Database is owned by Amazon
    
   Procedure is
   
-  --Initially we should convert Text to Vector  
+  - Initially we should convert Text to Vector  
   
    Here we need to convert Text to numerical Features and there are many Techniques of converting it but Embeddeding is one 
     
    the best technique to use
     
-  --One Hot Encoding Vs Embedding
+  - One Hot Encoding Vs Embedding
   
   In one Hot encoding if we have length of corpus 'n' which is very large then output will also be a vector of dimension     
     
@@ -62,11 +64,11 @@ IMDB-Internet Movie Database is owned by Amazon
    
    paramater in Network during Back prop and it also take Semantic Meaning into consideration.
    
-  -- Padding
+  - Padding
   
-   reviews x1=<x11,x12,x13,x14,x15.......x190>    length=90
+   - - reviews x1=<x11,x12,x13,x14,x15.......x190>    length=90
      
-   -------x2=<x21,x22,x23,x24.........x2100>      length=100
+   - - x2=<x21,x22,x23,x24.........x2100>      length=100
              
    so we are different length of reviews.Here the problem is when we are doing Back prop we need update weigths using 1 review at a 
    
@@ -82,7 +84,7 @@ IMDB-Internet Movie Database is owned by Amazon
      
    add "0" at the start of the Word Vector.
    
-  --LSTM
+  - LSTM
   
   Same as we take multiple neurons in ANN.similarly in the real world we take multiple LSTM together in this problem I  took 200 and
     
@@ -90,9 +92,9 @@ IMDB-Internet Movie Database is owned by Amazon
     
   Also there are 2 types of Dropouts in LSTMS [HYPERPARAMETER]
     
-  -----Input Dropout.
+  - -Input Dropout.
       
-  -----Recurrent Dropout.
+  - - Recurrent Dropout.
        
   I took input dropout to be 0.2 and no recurrent dropout
     
